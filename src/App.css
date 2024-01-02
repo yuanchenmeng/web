@@ -1,0 +1,403 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+
+.journeySection {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 3px;
+  background-color: #000;
+}
+
+.heading::before {
+  right: 100%;
+  margin-right: 5px;
+}
+
+.heading::after {
+  left: 100%;
+  margin-left: 5px;
+}
+
+.sbar{
+  width: 40px;
+  height: 9px;
+  border-radius: 8px;
+  background-color: green;
+}
+
+.swbar{
+  width: 40px;
+  height: 9px;
+  border-radius: 8px;
+  border: 1px solid rgba(122, 122, 122, 0.4);
+}
+
+.card{
+  border-color: rgba(171, 171, 171, 0.7);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  border: 1px solid rgba(93, 93, 93, 0.1);
+}
+
+.card-main{
+
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.dotpara::before {
+  content: '\2022'; /* Unicode character for a black dot */
+  color: black;
+  margin-right: 8px;
+}
+
+
+.font1{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Adobe Devanagari";
+}
+
+
+.font2{
+  font-size: 27px;
+  font-weight: 600;
+  color: #042fbb;
+  font-family: "Adobe Devanagari";
+}
+
+.font3{
+  font-size: 19px;
+  font-weight: 500;
+  color: black;
+  font-family: "Calibri Light";
+}
+
+
+.font4{
+  font-size: 17px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(37, 133, 225, 0.85);
+  font-family: "Lucida Sans";
+}
+
+
+.font5{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Arial";
+}
+
+.font6{
+  font-size: 17px;
+  font-weight: 100;
+  font-family: "Arial";
+}
+
+
+
+@media (min-width: 1200px) {
+
+  .main-width{width: 60%;}
+
+  .adj1{
+    margin-right: 4rem;
+  }
+
+  .header-padding{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .headersig{
+    align-items: center;
+    display: flex;
+    font-family: "Lucida Handwriting Std";
+    font-size: 19px;
+    margin-left: 4rem;
+    margin-right:2.5rem;
+  }
+
+  .header-l-dis{
+    margin-right: 14rem;
+  }
+
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .main-width{width: 80%;}
+
+  .adj1{
+    margin-right: 2rem;
+  }
+
+  .header-padding{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .headersig{
+    align-items: center;
+    display: flex;
+    font-family: "Lucida Handwriting Std";
+    font-size: 19px;
+    margin-left: 3rem;
+    margin-right:2rem;
+  }
+
+  .header-l-dis{
+    margin-right: 8rem;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .main-width{width: 90%;}
+
+  .adj1{
+    margin-right: 1rem;
+  }
+
+  .header-padding{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .headersig{
+    align-items: center;
+    display: flex;
+    font-family: "Lucida Handwriting Std";
+    font-size: 19px;
+    margin-left: 1.5rem;
+    margin-right:1rem;
+  }
+
+  .header-l-dis{
+    margin-right: 6rem;
+  }
+
+}
+
+.colorbar {
+  height: 30px;
+  margin-bottom: 10px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background: linear-gradient(to left, #00a88b, #1ebd9f) !important;
+  animation: anim-lightspeed-in 0.8s ease forwards;
+}
+
+@keyframes anim-lightspeed-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+.left20{left: 20%;}
+.left40{left: 40%;}
+.left60{left: 60%;}
+.left80{left: 80%;}
+
+
+.skills {
+  display: block;
+  margin: auto;
+  text-align: left;
+  position: relative;
+}
+
+.lines {
+
+  position: absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  list-style: none;
+  background-color: rgba(207, 252, 229, 0.1);
+  z-index: 1;
+}
+
+.greyline{
+  position: relative;
+  height:100%;
+  width: 2px;
+  bottom: 0;
+  background: rgba(218, 218, 218, 0.6);
+}
+
+.charts {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  z-index: 10;
+}
+
+
+.font7{
+  font-size: 18px;
+  color: white;
+  font-weight: 300;
+}
+
+.btn1s{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.btn1{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.btn1:hover{
+  color: #00a88b;
+  text-decoration: underline;
+}
+
+.greyborder{
+  border: 1px solid #696969;
+}
+.h-90{
+  height:90%;
+}
+
+
+.starter-bg{
+  background-color: #0f1822;
+}
+
+@-moz-document url-prefix() {
+  .starter-bg{
+    background-color: #0f1822;
+  }
+}
+
+.minus-header {
+  height: calc(100vh - 76px);
+}
+
+.transition-slide-up {
+  transform: translateY(100%);
+  transition: transform 1s ease-in-out;
+}
+
+.transition-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes slideOutFromTop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+    display: none;
+  }
+}
+
+
+.slide-out-from-top {
+  animation: slideOutFromTop 1s forwards;
+}
+
+@-moz-document url-prefix() {
+  .slide-out-from-top {
+    display: none;
+  }
+}
+
+.btn2{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  background-color: dimgrey;
+  color: floralwhite;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 0.9rem;
+  padding-right:0.9rem;
+  border-radius: 10px;
+}
+
+.btn2:hover{
+  background-color: #9b9b9b;
+}

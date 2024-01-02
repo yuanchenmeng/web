@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Adobe Devanagari'
+  ,'Calibri Light', 'Lucida Sans', 'Arial', 'Oxygen' , 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Lucida Handwriting Std";
+  src: url("https://db.onlinewebfonts.com/t/659fb049d4b1e37978ca19a886d7f79d.eot");
+  src: url("https://db.onlinewebfonts.com/t/659fb049d4b1e37978ca19a886d7f79d.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/659fb049d4b1e37978ca19a886d7f79d.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/659fb049d4b1e37978ca19a886d7f79d.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/659fb049d4b1e37978ca19a886d7f79d.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/659fb049d4b1e37978ca19a886d7f79d.svg#Lucida Handwriting Std")format("svg");
+}
