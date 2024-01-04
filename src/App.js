@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from "./header"
 import Home from "./home"
+import Homef from "./homef"
 import Footer from "./footer"
 import Film from "./film"
 import Projects from "./projects"
@@ -19,7 +20,7 @@ function App() {
               <Routes>
                 <Route path="/home" element={<Home />} />
                 <Route path="/phome" element={<Home />} />
-                <Route path="/web" element={<Home />} />
+                <Route path="/web" element={<Homef />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/film" element={<Film />} />
               </Routes>

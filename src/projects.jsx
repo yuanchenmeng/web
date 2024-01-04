@@ -1,20 +1,8 @@
 import React, {useState} from "react";
 
-import p1 from "./res/p1.png";
-import p2 from "./res/p2.png";
-import p3 from "./res/p3.png";
-import p4 from "./res/p4.png";
-
-
 import { ReactComponent as PunchHole } from './res/icon1.svg';
 import { ReactComponent as LinkIcon } from './res/icon2.svg';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import './App.css';
-import ColorBar from "./ColorBar";
-import {Link} from "react-router-dom";
-
 
 function Projects() {
 
@@ -31,7 +19,6 @@ function Projects() {
 
   const [selectedCategories, setSelectedCategories] = useState(["All"]);
 
-
   const toggleCategory = (category) => {
     if (selectedCategories.includes(category)) {
       setSelectedCategories(selectedCategories.filter((c) => c !== category));
@@ -41,11 +28,8 @@ function Projects() {
   };
 
 
-
-
   return (
     <div>
-      <h1> Hello Projects</h1>
       <div className="journeySection">
         <h1 className="heading">Skills</h1>
       </div>
@@ -88,6 +72,7 @@ function Projects() {
                 <div className="colorbar block w-full"><span className="font7 ml-4">React</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">Django</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">SpringBoot</span></div>
+                <div className="colorbar block w-full"><span className="font7 ml-4">Node.js</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">Bootstrap</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">Tailwind CSS</span></div>
                 <div className="colorbar block w-4/5"><span className="font7 ml-4">Firebase</span></div>
@@ -100,7 +85,7 @@ function Projects() {
                 <div className="colorbar block w-2/5"><span className="font7 ml-4">Kubernetes</span></div>
                 <div className="colorbar block w-2/5"><span className="font7 ml-4">GCP</span></div>
                 <div className="colorbar block w-2/5"><span className="font7 ml-4">Kafka</span></div>
-                <div className="colorbar block w-full"><span className="font7 ml-4">MySql</span></div>
+                <div className="colorbar block w-full"><span className="font7 ml-4">MySQL</span></div>
                 <div className="colorbar block w-4/5"><span className="font7 ml-4">Oracle</span></div>
                 <div className="colorbar block w-3/5"><span className="font7 ml-4">MongoDB</span></div>
                 <div className="h-5"></div>
@@ -192,6 +177,7 @@ function Projects() {
                 <div className="colorbar block w-full"><span className="font7 ml-4">React</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">Django</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">SpringBoot</span></div>
+                <div className="colorbar block w-full"><span className="font7 ml-4">Node.js</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">Bootstrap</span></div>
                 <div className="colorbar block w-full"><span className="font7 ml-4">Tailwind CSS</span></div>
                 <div className="colorbar block w-4/5"><span className="font7 ml-4">Firebase</span></div>
@@ -273,7 +259,7 @@ function Projects() {
 
               <div className="w-full charts">
                 <div className="h-5"></div>
-                <div className="colorbar block w-full"><span className="font7 ml-4">MySql</span></div>
+                <div className="colorbar block w-full"><span className="font7 ml-4">MySQL</span></div>
                 <div className="colorbar block w-4/5"><span className="font7 ml-4">Oracle</span></div>
                 <div className="colorbar block w-3/5"><span className="font7 ml-4">MongoDB</span></div>
                 <div className="h-5"></div>
@@ -355,7 +341,6 @@ function Projects() {
               <div className="flex items-center">
                 <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
                 <h3 className="font2 ml-2">High-Performance Student Service System</h3>
-                <LinkIcon className = "ml-6" style={{ width: '20px', height: '20px', color: 'red', opacity: 0.85 }} />
               </div>
 
               <div className="font4">
@@ -363,10 +348,10 @@ function Projects() {
               </div>
               <p className="dotpara font3">
                 Implemented distributed <b>MySQL clusters</b>  with master-slave replication and database sharding
-                and partition by Sharding-JDBC to handle requests in high-concurrency scenarios
+                and partition by <b>Sharding-JDBC</b> to handle requests in <b>high-concurrency</b> scenarios
               </p>
               <p className="dotpara font3">
-                Ensured data <b>consistency</b> between Redis and MySQL using <b>Kafka</b> for double delete operation.
+                Ensured data <b>consistency</b> between <b> Redis and MySQL using Kafka </b> for double delete operation.
               </p>
               <p className="dotpara font3">
                 Integrated <b>Spring Cloud Gateway</b> and <b>Zookeeper</b> in Spring Cloud to manage microservices.
@@ -385,7 +370,10 @@ function Projects() {
               <div className="flex items-center">
                 <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
                 <h3 className="font2 ml-2">Health Tracker</h3>
-                <LinkIcon className = "ml-6" style={{ width: '20px', height: '20px', color: 'red', opacity: 0.85 }} />
+                <a href="https://github.com/yuanchenmeng/React-Django-Health-app">
+                  <LinkIcon className = "ml-6" style={{ width: '20px', height: '20px', color: 'red', opacity: 0.85 }} />
+                </a>
+
 
               </div>
 
@@ -393,17 +381,17 @@ function Projects() {
                 <p>Keywords: Fullstack, React, Django, Mysql, AWS, Stryker, Jest</p>
               </div>
               <p className="dotpara font3">
-                Built an interactive dashboard with data visualization by<b> syncfusion, tailwind, and ReactJS</b> .
+                Built an interactive dashboard with data visualization by<b> Syncfusion, Tailwind CSS, and ReactJS</b> .
               </p>
               <p className="dotpara font3">
-                Followed Django MVT and utilized Django's built-in authentication for user authentication.
+                Followed <b>Django MVT</b> and utilized Django's built-in authentication for user authentication.
               </p>
               <p className="dotpara font3">
                 Attained test coverage and mutation testing scores over <b>85%</b>, leveraging <b>Jest and Stryker</b> for
                 frontend testing and Django's testing frameworks for backend testing.
               </p>
               <p className="dotpara font3">
-                Deployed on an AWS EC2 instance and integrated AWS SNS to control notifications.
+                Deployed on an <b>AWS EC2</b>  instance and integrated <b>AWS SNS</b>  to control notifications.
               </p>
 
             </div>
@@ -417,17 +405,17 @@ function Projects() {
               <div className="flex items-center">
                 <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
                 <h3 className="font2 ml-2">COVID-19 Survival Random Forest Classifier</h3>
-                <LinkIcon className = "ml-6" style={{ width: '20px', height: '20px', color: 'red', opacity: 0.85 }} />
               </div>
 
               <div className="font4">
-                <p>Keywords: scikit-learn</p>
+                <p>Keywords: scikit-learn, Machine Learning, Python, Random Forest Model</p>
               </div>
               <p className="dotpara font3">
                 Developed random forest models from scratch.
               </p>
               <p className="dotpara font3">
-                Achieved an accuracy comparable to the scikitlearn library and obtained over <b>80%</b> accuracy for the test data.
+                Achieved an accuracy comparable to the  <b>scikit-learn</b>   library and obtained over
+                <b> 80%</b> accuracy for the test data.
               </p>
 
             </div>
@@ -441,16 +429,83 @@ function Projects() {
               <div className="flex items-center">
                 <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
                 <h3 className="font2 ml-2">Pipelined CPU in PyRTL</h3>
-                <LinkIcon className = "ml-6" style={{ width: '20px', height: '20px', color: 'red', opacity: 0.85 }} />
               </div>
 
               <div className="font4">
                 <p>Keywords: CPU, PyTRL, LRU</p>
               </div>
               <p className="dotpara font3">
-                Built pipelined CPU using Python’s PyTRL library, implementing IEEE 754
+                Built pipelined CPU using Python’s <b>PyTRL</b> library, implementing IEEE 754
                 Standard floatingpoint calculations, a branch predictor,
-                and a set-associate cache with the LRU algorithm.
+                and a set-associate cache with the <b>LRU</b> algorithm.
+              </p>
+            </div>
+          </div>
+
+
+          <div className="mt-6 card">
+            <div className="card-main py-2">
+
+              <div className="flex items-center">
+                <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
+                <h3 className="font2 ml-2">CSimple Compiler</h3>
+              </div>
+
+              <div className="font4">
+                <p>Keywords: Compiler, C, flex, bison, Abstract Syntax Tree</p>
+              </div>
+              <p className="dotpara font3">
+                Designed a two-pass compiler utilizing <b>flex and bison</b>  for scanning and parsing.
+              </p>
+              <p className="dotpara font3">
+                Implemented in <b>C</b>, the compiler encompasses building an abstract syntax tree, type checking, semantic analysis, and
+                code generation. The ultimate output is <b>x86</b>  assembly code.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 card">
+            <div className="card-main py-2">
+
+              <div className="flex items-center">
+                <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
+                <h3 className="font2 ml-2">Credit Card Approval System</h3>
+              </div>
+
+              <div className="font4">
+                <p>Keywords: scikit-learn, Python, Perceptron Model, PCA</p>
+              </div>
+              <p className="dotpara font3">
+                Employed <b>PCA</b>  dimension reduction to handle imbalanced data in the credit card dataset.
+              </p>
+              <p className="dotpara font3">
+                Trained a <b>multilayer perceptron model</b>  using the <b>scikit-learn</b> library.
+              </p>
+              <p className="dotpara font3">
+                Achieved a prediction accuracy exceeding <b>93%</b>  and an F1 score of over 60.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-6 card">
+            <div className="card-main py-2">
+
+              <div className="flex items-center">
+                <PunchHole className = "inline" style={{ width: '23px', height: '23px', color: 'blue', opacity: 0.65 }} />
+                <h3 className="font2 ml-2">Realtime Tide Height Android App</h3>
+              </div>
+
+              <div className="font4">
+                <p>Keywords: Android, Fullstack, Dagger Hilt, Jetpack</p>
+              </div>
+              <p className="dotpara font3">
+                Developed an Android app in Kotlin utilizing <b>Dagger Hilt</b>  for dependency injection.
+              </p>
+              <p className="dotpara font3">
+                Utilized <b>retrofit2</b>  library to implement <b>RESTful APIs</b>  to fetch online open real-time data.
+              </p>
+              <p className="dotpara font3">
+                Implemented Model-View architecture and user interface components by <b>Jetpack</b>.
               </p>
             </div>
           </div>
