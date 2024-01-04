@@ -1,18 +1,14 @@
 {
   "files": {
     "main.css": "/web/static/css/main.d2dcbe12.css",
-    "main.js": "/web/static/js/main.5a8bb3d2.js",
+    "main.js": "/web/static/js/main.fe07051b.js",
     "static/js/787.4b7a7872.chunk.js": "/web/static/js/787.4b7a7872.chunk.js",
     "static/media/ucsbimg.jpg": "/web/static/media/ucsbimg.f35c398ac1c18884f9d6.jpg",
     "static/media/lsit.jpg": "/web/static/media/lsit.936feb3ab71396e54b64.jpg",
     "static/media/13.png": "/web/static/media/13.815114a659743f92f0b6.png",
     "static/media/12.png": "/web/static/media/12.6a9c0a5473ecaa8967a9.png",
-    "static/media/p3.png": "/web/static/media/p3.0615ac252cbbad7d9c96.png",
     "static/media/11.png": "/web/static/media/11.fdfe9d0fd027091d6ef0.png",
     "static/media/10.png": "/web/static/media/10.da70b9e2d97ee022d76a.png",
-    "static/media/p1.png": "/web/static/media/p1.cc97a8bb0f10ae6eef02.png",
-    "static/media/p4.png": "/web/static/media/p4.76609d07c0ee57e8876f.png",
-    "static/media/p2.png": "/web/static/media/p2.f466481c699124c3d96b.png",
     "static/media/8.png": "/web/static/media/8.c1d31dcadaef149d5d9e.png",
     "static/media/9.png": "/web/static/media/9.b0d39a5b4bccb1d8e24b.png",
     "static/media/7.png": "/web/static/media/7.22cc8d8cd530c0d33af1.png",
@@ -26,11 +22,11 @@
     "static/media/icon2.svg": "/web/static/media/icon2.cf41da0ea4cd370828e4d5ec69db5929.svg",
     "index.html": "/web/index.html",
     "main.d2dcbe12.css.map": "/web/static/css/main.d2dcbe12.css.map",
-    "main.5a8bb3d2.js.map": "/web/static/js/main.5a8bb3d2.js.map",
+    "main.fe07051b.js.map": "/web/static/js/main.fe07051b.js.map",
     "787.4b7a7872.chunk.js.map": "/web/static/js/787.4b7a7872.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d2dcbe12.css",
-    "static/js/main.5a8bb3d2.js"
+    "static/js/main.fe07051b.js"
   ]
 }
